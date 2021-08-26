@@ -23,10 +23,22 @@ p, li {
 	margin-bottom: 40px;
 }
 
+@media (max-width: 900px) {
+	.header {
+		flex-direction: column;
+	}
+}
+
 .header_main {
 	display: flex;
 	flex-direction: column;
 	max-width: 70%;
+}
+
+@media (max-width: 900px) {
+	.header_main {
+		max-width: 100%;
+	}
 }
 
 .h1-wrapper {
@@ -37,8 +49,13 @@ p, li {
 
 .avatar {
 	width: 80px;
-	height: auto;
+	height: 100px;
+}
 
+@media (max-width: 550px) {
+	.avatar {
+		display: none;
+	}
 }
 
 .h1-wrapper > h1 {
@@ -88,13 +105,31 @@ p, li {
 	flex-direction: row-reverse;
 }
 
+@media (max-width: 700px) {
+	.main {
+		flex-direction: column-reverse;
+	}
+}
+
 .main-column {
 	max-width: 40%;
 	margin-right: 20px;
 }
 
+@media (max-width: 700px) {
+	.main-column {
+		max-width: 100%;
+	}
+}
+
 .side-column {
 	max-width: 60%;
+}
+
+@media (max-width: 700px) {
+	.side-column {
+		max-width: 100%;
+	}
 }
 
 .work {
@@ -139,6 +174,7 @@ p, li {
 .skills__list {
 	list-style: none;
     margin: 0;
+    margin-bottom: 15px;
     padding: 0;
     text-align: left;
 }
@@ -239,4 +275,11 @@ p, li {
 
 .box-item-p {
 	width: 500px;
+}
+
+@media (max-width: 700px) {
+	.box-item-p {
+		max-width: 100%;
+		word-break: break-word;
+	}
 }
